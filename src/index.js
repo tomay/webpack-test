@@ -7,8 +7,7 @@ import icons from './icons.js';
 import MapboxDirections from '../static/libs/mapbox-gl-directions';
 
 // MB access token
-CONFIG.access_token =
-  'pk.eyJ1IjoidG9tLWlsaW5lLTIxIiwiYSI6ImNrbDJlOWh2NjBjNnoyd21yamk2eGd0YWEifQ.F5N02JRotHmPJZjWu7jeDw'
+CONFIG.access_token = 'pk.eyJ1IjoidG9tLWlsaW5lLTIxIiwiYSI6ImNrbDJlOWh2NjBjNnoyd21yamk2eGd0YWEifQ.F5N02JRotHmPJZjWu7jeDw';
 
 // map defaults
 CONFIG.startlat = 44.47512;
