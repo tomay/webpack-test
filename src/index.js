@@ -16,7 +16,8 @@ CONFIG.startzoom = 15;
 CONFIG.startpitch = 50;
 CONFIG.startbearing = -35;
 
-import styles from './index.scss';
+// import styles from './index.scss';
+import './index.scss';
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// INITIALIZATION: these functions are called when the page is ready,
