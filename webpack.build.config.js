@@ -12,9 +12,8 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        // Styles: Inject CSS into the head with source maps
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.(scss|css)$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -23,10 +22,7 @@ module.exports = merge(common, {
   plugins: [
     // Extracts CSS into separate files
     // Note: style-loader is for development, MiniCssExtractPlugin is for production
-    new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      chunkFilename: '[id].css',
-    }),
+    new MiniCssExtractPlugin(),
 
     // copy the listed things from entry to output
     new CopyWebpackPlugin({
